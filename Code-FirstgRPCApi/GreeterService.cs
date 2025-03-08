@@ -1,23 +1,15 @@
-﻿using ProtoBuf.Grpc;
-using Shared.Contracts;
-
+﻿using Shared.Contracts;
+namespace Client;
 public class GreeterService : IGreeterService
 {
-    //public Task<Response> SayHelloAsync(Request request, CallContext context = default)
-    //{
-    //    return Task.FromResult(
-    //            new Response
-    //            {
-    //                Message = $"Hello {request.Name}"
-    //            });
-    //}
-
     public Task<Response> SayHelloAsync(Request request)
     {
-        return Task.FromResult(
-                new Response
-                {
-                    Message = $"Hello {request.Name.ToUpper()}"
-                });
+        var responseMessage = GenerateGreeting(request.Name);
+        return Task.FromResult(new Response { Message = responseMessage });
+    }
+
+    private string GenerateGreeting(string name)
+    {
+        return $"Hello {name.ToUpper()}";
     }
 }

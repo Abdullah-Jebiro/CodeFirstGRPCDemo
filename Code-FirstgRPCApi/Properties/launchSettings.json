@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Code_FirstgRPCApi": {
+    "Client": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

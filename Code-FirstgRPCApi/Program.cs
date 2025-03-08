@@ -1,4 +1,5 @@
 using ProtoBuf.Grpc.Server;
+using Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
