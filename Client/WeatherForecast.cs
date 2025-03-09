@@ -1,4 +1,4 @@
-namespace Code_First_gRPC_Api
+namespace Client
 {
     public class WeatherForecast
     {
