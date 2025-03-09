@@ -1,4 +1,4 @@
-@Client_HostAddress = http://localhost:5085
+@Client_HostAddress = http://localhost:5132
 
 GET {{Client_HostAddress}}/weatherforecast/
 Accept: application/json

@@ -8,11 +8,11 @@
 
 	<ItemGroup>
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-		<PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.0.152" />
+		<PackageReference Include="Grpc.Net.ClientFactory" Version="2.67.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Shared\Shared.csproj" />
+		<ProjectReference Include="..\Shared\Shared.csproj" />
 	</ItemGroup>
 
 </Project>

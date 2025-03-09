@@ -1,5 +1,5 @@
 ﻿using Shared.Contracts;
-namespace Client;
+namespace Server;
 public class GreeterService : IGreeterService
 {
     public Task<Response> SayHelloAsync(Request request)
